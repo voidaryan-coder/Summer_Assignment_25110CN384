@@ -8,7 +8,6 @@ int main()
 
     while (n > 1)
     {
-
         if (n % i == 0)
         {
             n = n / i;
@@ -18,8 +17,6 @@ int main()
             i++;
         }
     }
-
     printf("Largest Prime Factor = %d", i);
-
     return 0;
 }
