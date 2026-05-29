@@ -8,7 +8,7 @@ int main()
     {
         if (n % i == 0)
         {
-            count++;
+        count++;
         }
     }
     if (count == 2)
