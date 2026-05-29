@@ -9,7 +9,7 @@ int main()
     {
         if (m % i == 0 && n % i == 0)
         {
-        gcd = i;
+           gcd = i;
         }
         i++;
     }
