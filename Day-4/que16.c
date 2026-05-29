@@ -5,6 +5,7 @@ int main()
     int m, n, count = 0, sum = 0;
     printf("Enter the range of numbers: ");
     scanf("%d%d", &m, &n);
+    printf("Armstrong number in given range are: ");
     for (int i = m; i <= n; i++)
     {
         int x = i;
