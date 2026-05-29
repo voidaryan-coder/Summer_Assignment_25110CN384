@@ -7,7 +7,7 @@ int main()
     printf("Prime number in given range are: ");
     for (int j = m; j <= n; j++)
     {
-        for (int i = 1; i <= n; i++)
+        for (int i = 1; i <= j; i++)
         {
             if (j % i == 0)
             {
