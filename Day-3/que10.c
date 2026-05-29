@@ -11,7 +11,7 @@ int main()
         {
             if (j % i == 0)
             {
-                count++;
+            count++;
             }
         }
         if (count == 2)
