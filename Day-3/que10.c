@@ -16,7 +16,7 @@ int main()
         }
         if (count == 2)
         {
-        printf("%d ", j);
+            printf("%d ", j);
         }
         count=0;
     }
