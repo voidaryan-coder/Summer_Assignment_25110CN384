@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+  int sum = 0;
+  printf("The number pyramid is:\n");
+  for (int i = 1; i <= 5; i++) {
+    for (int k = 4; k >= i; k--) {
+      printf(" ");
+    }
+    sum = sum * 10 + 1;
+    printf("%d", sum * sum);
+    printf("\n");
+  }
+}
