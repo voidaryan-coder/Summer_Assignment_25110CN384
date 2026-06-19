@@ -13,32 +13,39 @@ void array(int arr[], int n)
 }
 void union_array(int a[], int n1, int b[], int n2)
 {
-    int c[n1 + n2];
-    int k = 0;
-    for (int i = 0; i < n1; i++)
+    int unionArr[n1 + n2], found, k = 0, i, j;
+    for (i = 0; i < n1; i++)
     {
-        c[k++] = a[i];
-    }
-    for (int i = 0; i < n2; i++)
-    {
-        int j;
-        for (j = 0; j < n1; j++)
+        found = 0;
+        for (j = 0; j < k; j++)
         {
-            if (b[i] == a[j])
+            if (a[i] == unionArr[j])
             {
+                found = 1;
                 break;
             }
         }
-        if (j == n1)
-        {
-            c[k++] = b[i];
-        }
+        if (!found)
+            unionArr[k++] = a[i];
     }
-    printf("\nThe union of the two arrays is:\n");
-    for (int i = 0; i < k; i++)
+    for (i = 0; i < n2; i++)
     {
-        printf("%d ", c[i]);
+        found = 0;
+        for (j = 0; j < k; j++)
+        {
+            if (b[i] == unionArr[j])
+            {
+                found = 1;
+                break;
+            }
+        }
+        if (!found)
+            unionArr[k++] = b[i];
     }
+
+    printf("\nUnion of arrays: ");
+    for (i = 0; i < k; i++)
+        printf("%d ", unionArr[i]);
 }
 int main()
 {
